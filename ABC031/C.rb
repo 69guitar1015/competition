@@ -6,6 +6,8 @@ n.times do |i|
 	ao_max = -50*50-1
 	taka_max = -50*50-1
 	n.times do |j|
+		next if i==j
+		
 		foo = a[i..j]
 		foo = a[j..i] if i>j
 
