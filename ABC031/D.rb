@@ -23,8 +23,7 @@ def saiki(i, n, j, d)
 		ret = Hash.new
 		foo = $ws[j][n...k]
 
-		if foo.length>3 then next
-		end
+		next if foo.length>3
 
 		if d[$vs[j][i]]
 			return saiki(i+1, k, j, d) if d[$vs[j][i]]==foo
